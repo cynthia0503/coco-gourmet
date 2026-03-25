@@ -1,0 +1,413 @@
+/* ========== Base ========== */
+body {
+  background-color: #faf3e0;
+  margin: 0;
+}
+
+#wrap {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 850px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0px 30px rgba(78, 69, 58, 0.5);
+}
+
+#wrap img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+#wrap video {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== Animation ========== */
+.fade-up {
+  opacity: 0;
+}
+
+.fadein-up-active {
+  animation: fadeUPAnime 1s forwards;
+}
+
+@keyframes fadeUPAnime {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* ========== Sections ========== */
+.section-1 {
+  position: relative;
+}
+
+.section-1 .top-layer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 43%;
+  z-index: 10;
+}
+
+.fv {
+  overflow: hidden;
+  position: relative;
+
+}
+
+.fv .img {
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.fv .inner-box {
+  position: absolute;
+  width: 160%;
+  bottom: 18%;
+  left: -25%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.rt-header {
+  position: relative;
+}
+
+.rt-time {
+  position: absolute;
+  font-size: 4.3vw;
+  font-weight: bold;
+  color: #7a2d1b;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  bottom: 3%;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+}
+
+.rt-time .title {
+  text-align: center;
+}
+
+#datetime {
+  color: #aa280e;
+}
+
+@media screen and (min-width: 750px) {
+  .rt-time {
+    font-size: 35px;
+  }
+}
+
+
+.cta {
+  position: relative;
+  text-align: center;
+}
+
+.cta a {
+  position: absolute;
+  width: 100%;
+  bottom: 25%;
+  left: 0;
+  animation: flare-scale-btn 2s ease-in-out infinite;
+}
+
+@keyframes flare-scale-btn {
+  0% {
+    transform: scale(1);
+    /* 通常サイズ */
+  }
+
+  50% {
+    transform: scale(1.1);
+    /* 拡大 */
+  }
+
+  100% {
+    transform: scale(1);
+    /* 元に戻る */
+  }
+}
+
+.authority_04 {
+  position: relative;
+}
+
+.authority_04 .txt {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 58%;
+}
+
+.benefit {
+  overflow: hidden;
+  position: relative;
+}
+
+.benefit img {
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+}
+
+.benefit .inner-box {
+  position: absolute;
+  width: 200%;
+  bottom: 20%;
+  left: -45%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.voice-wrap {
+  position: relative;
+}
+
+.voices .swiper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 1%;
+  left: 0;
+  padding-bottom: 10%;
+}
+
+.voices .swiper .swiper-slide img {
+  box-shadow: 0 0px 22px rgba(70, 55, 34, 0.5);
+}
+
+.voices .top-layer {
+  position: absolute;
+  width: 33.6%;
+  left: 32%;
+  bottom: 62%;
+  z-index: 21;
+}
+/*--------Swiper 共通------*/
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  width: 83%;
+  height: auto;
+  margin: 20px;
+}
+
+.swiper-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  background-color: #755220;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: bold;
+  content: '';
+}
+
+.swiper .swiper-button-next::after {
+  content: '→';
+}
+
+.swiper .swiper-button-prev::after {
+  content: '←';
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 1rem)) !important;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 1rem)) !important;
+  margin: 0 15px !important;
+}
+
+
+:root {
+  --swiper-theme-color: #f7cc61 !important;
+}
+
+
+.results {
+  position: relative;
+}
+
+.results .txt {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 49%;
+}
+
+.offer-1 {
+  position: relative;
+}
+
+.offer-1 .offer-card {
+  position: absolute;
+  width: 100%;
+  bottom: 40%;
+}
+
+.offer-1 .top-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+}
+
+.point1,
+.point2 {
+  position: relative;
+}
+
+.point1 .img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 2.2%;
+}
+
+.point2 .inner-box {
+  position: absolute;
+  width: 83%;
+  /* height: 40%; */
+  left: 8.5%;
+  border-radius: 20px;
+  overflow: hidden;
+  bottom: 44%;
+}
+
+.point2 .inner-box video {
+  width: 120%;
+}
+
+.point2 .img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 26%;
+}
+
+.offer-2 {
+  position: relative;
+}
+
+.offer-2 .offer-card {
+  position: absolute;
+  width: 100%;
+  bottom: 50%;
+}
+
+.offer-2 .top-layer {
+  position: absolute;
+  left: 0;
+  bottom: 8%;
+}
+
+.faq-wrap {
+  position: relative;
+}
+
+.faq .swiper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 1%;
+  left: 0;
+  padding-bottom: 6%;
+}
+
+.offer-3 {
+  position: relative;
+}
+
+.offer-3 .offer-card {
+  position: absolute;
+  width: 100%;
+  bottom: 59%;
+}
+
+.offer-3 .top-layer {
+  position: absolute;
+  left: 0;
+  bottom: 8%;
+}
+
+/*------SP swiper調整------*/
+@media screen and (max-width: 750px) {
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 3vw)) !important;
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 3vw)) !important;
+    margin: 0 2vw !important;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -1vw !important;
+  }
+
+  .swiper .swiper-button-next::after,
+  .swiper .swiper-button-prev::after {
+    color: #fff;
+    font-size: 5.5vw;
+    font-weight: bold;
+    content: '';
+  }
+
+  .swiper .swiper-button-next::after {
+    content: '→';
+  }
+
+  .swiper .swiper-button-prev::after {
+    content: '←';
+  }
+
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    background-color: #755220;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+  }
+
+
+  .benefit .inner-box {
+    left: -70vw;
+  }
+}
