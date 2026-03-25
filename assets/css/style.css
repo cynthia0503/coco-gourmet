@@ -204,6 +204,7 @@ body {
   bottom: 62%;
   z-index: 21;
 }
+
 /*--------Swiper 共通------*/
 .swiper-wrapper {
   transition-timing-function: linear !important;
@@ -369,6 +370,17 @@ body {
 
 /*------SP swiper調整------*/
 @media screen and (max-width: 750px) {
+  .voices .swiper .swiper-slide img {
+    box-shadow: 0 0px 10px rgba(70, 55, 34, 0.5);
+  }
+
+  .swiper-slide img {
+    width: 83%;
+    height: auto;
+    margin: 2vw;
+  }
+
+
   .swiper-pagination-bullet {
     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 3vw)) !important;
     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 3vw)) !important;
